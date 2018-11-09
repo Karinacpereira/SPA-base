@@ -1,8 +1,9 @@
 $(document).ready(() => {
   page('/', home);
-  page('/payments', payments);
-  page('/insurance', insurance);
-  page('/map', map);
+  page('/client', cliente);
+  page('/enterprise/login', login);
+  page('/enterprise/signup', cadastro)
+  page('/enterprise', empresa);
   page();
 })
 
@@ -10,14 +11,18 @@ function home() {
   $('main').html(renderHome());
 }
 
-function payments() {
-  $('main').html(renderPayments());
+function cliente() {
+  $('main').html(renderClient());
 }
 
-function insurance() {
-  $('main').html(renderInsurance());
+function empresa() {
+  $('main').html(renderEnterprise());
 }
 
-function map() {
-  $('main').html(renderMap());
+function login() {
+  $('main').html(renderLogin());
+}
+
+function cadastro() {
+  $('main').html(renderSignup());
 }
